@@ -1,8 +1,8 @@
 WITH raw_listings AS (SELECT * FROM AIRBNB.RAW.RAW_LISTINGS)
 SELECT
-    ID,
+    ID AS listing_id,
     LISTING_URL,
-    NAME,
+    NAME AS listing_name,
     ROOM_TYPE,
     MINIMUM_NIGHTS,
     HOST_ID,
